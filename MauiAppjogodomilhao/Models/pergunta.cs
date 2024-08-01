@@ -8,9 +8,9 @@ namespace MauiAppjogodomilhao.Models
 {
     internal class pergunta
     {
-        public int id { get; set; }
+        public int Id { get; set; }
         public string Enunciado { get; set; }
 
-        public List<alternativa> alternativas { get; set; }
+        public List<alternativa> Alternativas { get; set; }
     }
 }

@@ -5,7 +5,7 @@ namespace MauiAppjogodomilhao
 {
     public partial class App : Application
     {
-        List<pergunta> perguntas_faceis = new() 
+        List<pergunta> perguntas_faceis=new() 
         {
             new pergunta
             {
@@ -13,7 +13,7 @@ namespace MauiAppjogodomilhao
                 Id = 1,
                 Enunciado = "Qual é o nome dado ao estado da água em forma de  gelo?",
 
-                alternativas=new()
+                Alternativas=new()
                 {
                     new alternativa {correta = false, Descricao = "PLASMA"},
                     new alternativa {correta = false, Descricao = "GASOSO"},
@@ -29,7 +29,7 @@ namespace MauiAppjogodomilhao
                 Id = 2,
                 Enunciado = "Quem é a namorada do Mickey?",
 
-                alternativas=new()
+                Alternativas=new()
                 {
                     new alternativa {correta = true, Descricao = "MINNIE"},
                     new alternativa {correta = false, Descricao = "MARGARIDA"},
@@ -45,7 +45,7 @@ namespace MauiAppjogodomilhao
                 Id = 3,
                 Enunciado = "Qual é o nome do personagem do folclore brasileiro que tem uma perna só?",
 
-                alternativas=new()
+                Alternativas=new()
                 {
                     new alternativa {correta = true, Descricao = "SACI-PERERÊ"},
                     new alternativa {correta = false, Descricao = "CUCA"},
@@ -61,7 +61,7 @@ namespace MauiAppjogodomilhao
                 Id = 4,
                 Enunciado = "Fidel Cxastro nasceu em qual país?",
 
-                alternativas=new()
+                Alternativas=new()
                 {
                     new alternativa {correta = false, Descricao = "JAMAICA"},
                     new alternativa {correta = false, Descricao = "MÉXICO"},
@@ -77,7 +77,7 @@ namespace MauiAppjogodomilhao
                 Id = 5,
                 Enunciado = "Qual é o zodiaco que nasce no dia do ano-novo?",
 
-                alternativas=new()
+                Alternativas=new()
                 {
                     new alternativa {correta = false, Descricao = "VIRGEM"},
                     new alternativa {correta = false, Descricao = "AQUÁRIO"},
@@ -92,12 +92,12 @@ namespace MauiAppjogodomilhao
                 Id = 6,
                 Enunciado = "Quantas folhas tem um trevo da sorte?",
 
-                alternativas=new()
+                Alternativas=new()
                 {
-                    new alternativa {correta = false, Descricao = "VIRGEM"},
-                    new alternativa {correta = false, Descricao = "AQUÁRIO"},
-                    new alternativa {correta = true, Descricao = "CAPRICÓRNIO"},
-                    new alternativa {correta = false, Descricao = "ARIES"},
+                    new alternativa {correta = false, Descricao = "CINCO"},
+                    new alternativa {correta = false, Descricao = "QUATRO"},
+                    new alternativa {correta = true, Descricao = "TRÊS"},
+                    new alternativa {correta = false, Descricao = "SEIS"},
                 }
 
             },
@@ -107,12 +107,12 @@ namespace MauiAppjogodomilhao
                 Id = 7,
                 Enunciado = "o violoncelo é conhecido como um instrumento de:?",
 
-                alternativas=new()
+                Alternativas=new()
                 {
-                    new alternativa {correta = false, Descricao = "VIRGEM"},
-                    new alternativa {correta = false, Descricao = "AQUÁRIO"},
-                    new alternativa {correta = true, Descricao = "CAPRICÓRNIO"},
-                    new alternativa {correta = false, Descricao = "ARIES"},
+                    new alternativa {correta = false, Descricao = ""},
+                    new alternativa {correta = false, Descricao = ""},
+                    new alternativa {correta = false, Descricao = ""},
+                    new alternativa {correta = false, Descricao = ""},
                 }
 
             },
@@ -122,7 +122,7 @@ namespace MauiAppjogodomilhao
                 Id = 8,
                 Enunciado = "Qual é o zodiaco que nasce no dia do ano-novo?",
 
-                alternativas=new()
+                Alternativas=new()
                 {
                     new alternativa {correta = false, Descricao = "VIRGEM"},
                     new alternativa {correta = false, Descricao = "AQUÁRIO"},
@@ -137,7 +137,7 @@ namespace MauiAppjogodomilhao
                 Id = 9,
                 Enunciado = "Qual é o zodiaco que nasce no dia do ano-novo?",
 
-                alternativas=new()
+                Alternativas=new()
                 {
                     new alternativa {correta = false, Descricao = "VIRGEM"},
                     new alternativa {correta = false, Descricao = "AQUÁRIO"},
@@ -152,7 +152,7 @@ namespace MauiAppjogodomilhao
                 Id = 10,
                 Enunciado = "Qual é o zodiaco que nasce no dia do ano-novo?",
 
-                alternativas=new()
+                Alternativas=new()
                 {
                     new alternativa {correta = false, Descricao = "VIRGEM"},
                     new alternativa {correta = false, Descricao = "AQUÁRIO"},
