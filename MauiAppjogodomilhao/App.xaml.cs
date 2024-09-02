@@ -1637,10 +1637,25 @@ namespace MauiAppjogodomilhao
             }
 
         };
-          
 
+        static List<pergunta> perguntas_sorteadas = new();
 
+        public static pergunta GetRandompergunta_facil() 
+        {
+            Random r =new Random();
+            pergunta pergunta_sorteada;
 
+            while (true) 
+            {
+                int sorteado = r.Next();
+                pergunta_sorteada = perguntas_faceis[sorteado];
+                if(!perguntas_sorteadas.Contains(pergunta_sorteada))
+                {
+                    perguntas_sorteadas.Add(pergunta_sorteada);
+                    break;
+                }
+            }return pergunta_sorteada;
+        }
         public App()
         {
             InitializeComponent();
