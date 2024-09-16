@@ -12,8 +12,9 @@
 
         private void EasyRoll_Clicked(object sender, EventArgs e)
         {
-            this.BindingContext = App.getRandomPerguntaFacil();
+            this.BindingContext = App.getRandomperguntafacil();
         }
+
 
         private async void Next_Clicked(object sender, EventArgs e)
         {
@@ -56,13 +57,13 @@
 
             if (acertou)
             {
-                await DisplayAlert("ACERTOU!!!!", resp, "OK");
-                this.BindingContext = App.getRandomPerguntaFacil();
+                await DisplayAlert("ACERTOU!", resp, "OK");
+                this.BindingContext = App.getRandomperguntafacil();
                 pergunta_count++;
             }
             else
             {
-                await DisplayAlert("ERROU", "Perdeu tudo, não consegue né Moisés?", "OK");
+                await DisplayAlert("ERROU", "SE FUDEU", "OK");
             }
         }
 

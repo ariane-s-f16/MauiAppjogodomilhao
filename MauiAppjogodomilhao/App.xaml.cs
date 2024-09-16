@@ -1,11 +1,11 @@
-﻿using Java.Nio.Channels;
+﻿
 using MauiAppjogodomilhao.Models;
 
 namespace MauiAppjogodomilhao
 {
     public partial class App : Application
     {
-        List<pergunta> perguntas_faceis=new() 
+        static List<pergunta> perguntas_faceis=new() 
         {
             new pergunta
             {
@@ -555,7 +555,7 @@ namespace MauiAppjogodomilhao
             }
 
         };
-        List<pergunta> perguntas_medias = new()
+        static List<pergunta> perguntas_medias = new()
         {
             new pergunta
             {
@@ -1087,7 +1087,7 @@ namespace MauiAppjogodomilhao
 
 
         };
-        List<pergunta> perguntas_dificeis = new()
+        static List<pergunta> perguntas_dificeis = new()
         {
 
             new pergunta
@@ -1641,7 +1641,7 @@ namespace MauiAppjogodomilhao
         static List<pergunta> perguntas_sorteadas = new();
 
 
-        public static pergunta GetRandomperguntas_faceis() 
+        public static pergunta getRandomperguntafacil() 
         {
             Random r =new Random();
             pergunta pergunta_sorteada;
@@ -1657,7 +1657,42 @@ namespace MauiAppjogodomilhao
                 }
             }return pergunta_sorteada;
         }
-       
+        public static pergunta getRandomperguntasmedias()
+        {
+            Random r = new Random();
+            pergunta pergunta_sorteada;
+
+            while (true)
+            {
+                int sorteado = r.Next(1, 40);
+                pergunta_sorteada = perguntas_medias[sorteado];
+                if (!perguntas_sorteadas.Contains(pergunta_sorteada))
+                {
+                    perguntas_sorteadas.Add(pergunta_sorteada);
+                    break;
+                }
+            }
+            return pergunta_sorteada;
+        }
+
+        public static pergunta getRandomperguntasdificeis()
+        {
+            Random r = new Random();
+            pergunta pergunta_sorteada;
+
+            while (true)
+            {
+                int sorteado = r.Next(1, 40);
+                pergunta_sorteada = perguntas_dificeis[sorteado];
+                if (!perguntas_sorteadas.Contains(pergunta_sorteada))
+                {
+                    perguntas_sorteadas.Add(pergunta_sorteada);
+                    break;
+                }
+            }
+            return pergunta_sorteada;
+        }
+
 
         public App()
         {

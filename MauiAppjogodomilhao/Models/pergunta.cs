@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MauiAppjogodomilhao.Models
 {
-    internal class pergunta
+    public class pergunta
     {
         public int Id { get; set; }
         public string Enunciado { get; set; }
